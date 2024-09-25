@@ -38,7 +38,6 @@ function Data() {
   };
 
   return (
-    <div className="a">
       <div>
         <div className="header-row">
           {Object.keys(datas[0]).map((item, i) => (
@@ -50,7 +49,7 @@ function Data() {
         <AutoSizer>
           {({ height, width }: { height: number; width: number }) => (
             <List
-              height={height * 8}
+              height={height * 10}
               itemCount={datas.length}
               itemSize={height}
               width={width}
@@ -61,7 +60,6 @@ function Data() {
           )}
         </AutoSizer>
       </div>
-    </div>
   );
 }
 
